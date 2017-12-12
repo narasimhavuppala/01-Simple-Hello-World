@@ -16,5 +16,10 @@ pipeline {
         sleep 15
       }
     }
+    stage('Approval') {
+      steps {
+        input 'Approve?'
+      }
+    }
   }
 }
