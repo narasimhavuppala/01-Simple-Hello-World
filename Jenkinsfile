@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'git@github.com:narasimhavuppala/01-Simple-Hello-World.git', branch: 'master')
+        git 'https://github.com/narasimhavuppala/01-Simple-Hello-World.git'
       }
     }
   }
